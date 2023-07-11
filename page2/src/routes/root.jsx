@@ -10,7 +10,8 @@ export default function Root() {
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="https://github.com/jack-sherick">Git</a>
+            <a class="nav-link" href="https://github.com/jack-sherick">My Git</a>
+            <a class="nav-link" href="https://github.com/jack-sherick/page2">Page Repo</a>
             <a class="nav-link" href="./src/top-down/start.html">Fun Project</a>
           </div>
         </div>

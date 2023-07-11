@@ -7,6 +7,8 @@ import {
 import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
+import './scss/styles.scss';
+import * as bootstrap from 'bootstrap';
 
 const router = createBrowserRouter([
   {

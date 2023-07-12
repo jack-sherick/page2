@@ -32,8 +32,13 @@ body {
 }
 
 h1 {
+  padding: 20px;
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+p {
+  padding: 20px;
 }
 
 button {

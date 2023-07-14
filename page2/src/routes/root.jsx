@@ -18,7 +18,10 @@ export default function Root() {
 
         </div>
       </div>
-    </nav>
+    </nav>'
+    <div>
+      <h2>About Me</h2>
+    </div>
     </div>
     );
   }

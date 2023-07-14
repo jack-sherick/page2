@@ -37,13 +37,13 @@ h1 {
   line-height: 1.1;
 }
 
-h2 {
+/* h2 {
   padding-block: 40px;
   padding-inline: 8px;
-} 
+}  */
 
 p {
-  padding: 20px;
+  padding-inline: 20px;
 }
 
 button {

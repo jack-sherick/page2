@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Root from "./routes/root";
+import Start from "./top-down/start";
 import ErrorPage from "./error-page";
 import './scss/styles.scss';
 import * as bootstrap from 'bootstrap';
@@ -14,7 +15,8 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />
+    errorElement: <ErrorPage />,
+    gameStart: <Start />
   },
 ]);
 

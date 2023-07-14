@@ -15,7 +15,6 @@ export default function Root() {
             <a class="nav-link" href="https://github.com/jack-sherick/page2">Page Repo</a>
             <a class="nav-link" href="./src/top-down/start.html">Fun Project</a>
           </div>
-
         </div>
       </div>
     </nav>'

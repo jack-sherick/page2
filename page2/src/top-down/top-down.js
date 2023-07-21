@@ -8,7 +8,7 @@
 	-Bullets aren't rainbow (but coloring needs work)
 	-Categories work now
 	-Bullet/mob collisions work
-	-Player can take damage by collision with mobs
+	-Player can take damage via collision with mobs
 */
 // module aliases
 

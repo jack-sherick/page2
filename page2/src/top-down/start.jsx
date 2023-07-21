@@ -6,7 +6,7 @@ export default function Start() {
         </head>
 
         <body>
-        <button></button>
+        <button>Test</button>
         </body>
 
         </html>

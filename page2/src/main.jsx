@@ -1,5 +1,6 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async";
+import * as ReactDOM from "react-dom/client"; 
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,17 +12,20 @@ import ErrorPage from "./error-page";
 import './scss/styles.scss';
 import * as bootstrap from 'bootstrap';
 
+const helmetContext = {};
+
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/page2/",
     element: <Root />,
     errorElement: <ErrorPage />,
-    gameStart: <Start />
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HelmetProvider context={helmetContext}>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   </React.StrictMode>
 );

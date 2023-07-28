@@ -4,14 +4,15 @@ export default function Root() {
     return (
     <html lang="en">
       <head>
-        <Helmet>
+      <Helmet>
           <script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js'></script>
           <script src="/src/routes/background.js"></script>
         </Helmet>
+
       </head>
 
       <body>
-      <div class="">
+      <div class="fore">
         <nav class="navbar navbar-expand-lg fixed-top bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">My Page</a>
@@ -25,6 +26,7 @@ export default function Root() {
               <a class="nav-link" href="https://github.com/jack-sherick">My Git</a>
               <a class="nav-link" href="https://github.com/jack-sherick/page2">Page Repo</a>
               <a class="nav-link" href="./src/top-down/start.html">Fun Project</a>
+              <a class="nav-link">Test</a>
             </div>
           </div>
         </div>

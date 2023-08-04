@@ -1,3 +1,10 @@
+/*
+ Background Balls!
+ # Issues:
+ Balls are sometimes just removed on collision
+
+*/
+
 console.log("By Jack Sherick");
 
 const BALL_CONSTANT = 5;
@@ -24,7 +31,7 @@ let render = Render.create({
 
 engine.world.gravity.y = 0;
 
-pElements = []
+let pElements = []
 
 for (let i = 0; i < BALL_CONSTANT; ++i) {
     pElements[i] = Matter.Bodies.circle(Math.random() * window.innerWidth, Math.random() * window.innerHeight, 60, {
@@ -76,21 +83,25 @@ setInterval(function() {
 	for (let i = 0; i < BALL_CONSTANT; ++i) {
 		if (pElements[i].velocity.x > 7) {
 			Matter.Body.setVelocity(pElements[i], {
-				x: 7
+				x: 7,
+				y: pElements[i].velocity.y
 			})
 		}
 		if (pElements[i].velocity.y > 7) {
 			Matter.Body.setVelocity(pElements[i], {
+				x: pElements[i].velocity.x,
 				y: 7
 			})
 		}
 		if (pElements[i].velocity.x < -7) {
 			Matter.Body.setVelocity(pElements[i], {
-				x: -7
+				x: -7,
+				y: pElements[i].velocity.y
 			})
 		}
 		if (pElements[i].velocity.y < -7) {
 			Matter.Body.setVelocity(pElements[i], {
+				x: pElements[i].velocity.x,
 				y: -7
 			})
 		}

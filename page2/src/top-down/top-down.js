@@ -368,6 +368,8 @@ setInterval(function () {
 
 function dead () {
 	window.location.href = "start.html"
+
+	return 0;
 }
 
 //sends out mobs periodically based on waveState

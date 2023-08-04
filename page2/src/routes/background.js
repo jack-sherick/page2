@@ -1,3 +1,5 @@
+console.log("By Jack Sherick");
+
 const BALL_CONSTANT = 5;
 
 let Engine = Matter.Engine,
@@ -69,6 +71,31 @@ let topWall = Matter.Bodies.rectangle(window.innerWidth/2, 0, window.innerWidth,
 });
 
 World.add(engine.world, [leftWall, rightWall, bottomWall, topWall])
+
+setInterval(function() {
+	for (let i = 0; i < BALL_CONSTANT; ++i) {
+		if (pElements[i].velocity.x > 7) {
+			Matter.Body.setVelocity(pElements[i], {
+				x: 7
+			})
+		}
+		if (pElements[i].velocity.y > 7) {
+			Matter.Body.setVelocity(pElements[i], {
+				y: 7
+			})
+		}
+		if (pElements[i].velocity.x < -7) {
+			Matter.Body.setVelocity(pElements[i], {
+				x: -7
+			})
+		}
+		if (pElements[i].velocity.y < -7) {
+			Matter.Body.setVelocity(pElements[i], {
+				y: -7
+			})
+		}
+	}
+}, 1000/60);
 
 Events.on(engine, "collisionStart", function(event) {
     const pairs = event.pairs;

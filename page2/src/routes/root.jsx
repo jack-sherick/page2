@@ -4,14 +4,16 @@ export default function Root() {
     return (
     <html lang="en">
       <head>
-      <Helmet>
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js'></script>
-          <script src="/src/routes/background.js"></script>
-        </Helmet>
 
       </head>
 
       <body>
+        
+      <Helmet>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js'></script>
+        <script src="/src/routes/background.js"></script>
+      </Helmet>
+      
       <div class="fore">
         <nav class="navbar navbar-expand-lg fixed-top bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
         <div class="container-fluid">

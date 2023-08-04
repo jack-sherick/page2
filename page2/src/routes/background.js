@@ -41,28 +41,28 @@ for (let i = 0; i < BALL_CONSTANT; ++i) {
     World.add(engine.world, pElements[i]);
 }
 
-let leftWall = Matter.Bodies.rectangle(0, window.innerHeight/2, 2, window.innerHeight, {
+let leftWall = Matter.Bodies.rectangle(0, window.innerHeight/2 + 100, 2, window.innerHeight, {
 	render: {
 		visible: false
 	},
 	isStatic: true,
 	inertia: Infinity
 });
-let rightWall = Matter.Bodies.rectangle(window.innerWidth, window.innerHeight/2, 2, window.innerHeight, {
+let rightWall = Matter.Bodies.rectangle(window.innerWidth, window.innerHeight/2 + 100, 2, window.innerHeight, {
 	render: {
 		visible: false
 	},
 	isStatic: true,
 	inertia: Infinity
 });
-let bottomWall = Matter.Bodies.rectangle(window.innerWidth/2, window.innerHeight, window.innerWidth, 2, {
+let bottomWall = Matter.Bodies.rectangle(window.innerWidth/2 + 100, window.innerHeight, window.innerWidth, 2, {
 	render: {
 		visible: false
 	},
 	isStatic: true,
 	inertia: Infinity
 });
-let topWall = Matter.Bodies.rectangle(window.innerWidth/2, 0, window.innerWidth, 2, {
+let topWall = Matter.Bodies.rectangle(window.innerWidth/2 + 100, 0, window.innerWidth, 2, {
 	render: {
 		visible: false
 	},

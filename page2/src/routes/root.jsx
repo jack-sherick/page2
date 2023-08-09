@@ -5,8 +5,7 @@ export default function Root() {
     <html lang="en">
       <head>
       <Helmet>
-          {/* <script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js'></script>
-          <script src="/src/routes/background.js"></script> */}
+          
       </Helmet>
 
       </head>
@@ -25,8 +24,7 @@ export default function Root() {
             <div class="navbar-nav">
               <a class="nav-link" href="https://github.com/jack-sherick">My Git</a>
               <a class="nav-link" href="https://github.com/jack-sherick/page2">Page Repo</a>
-              <a class="nav-link" href="./src/top-down/start.html">Fun Project</a>
-              <a class="nav-link">Test</a>
+              <a class="nav-link" href="./project/">Fun Project</a>
             </div>
           </div>
         </div>

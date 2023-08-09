@@ -367,7 +367,7 @@ setInterval(function () {
 }, 1000/50);
 
 function dead () {
-	window.location.href = "start.html"
+	window.location.href = "https://jack-sherick.github.io/page2/";
 
 	return 0;
 }
@@ -510,8 +510,8 @@ function capSpeed () {
 		})
 	}
 
-	magnitude = Math.sqrt(player.velocity.x*player.velocity.x + player.velocity.y*player.velocity.y);
-	angle = Math.atan2(player.velocity.y, player.velocity.x)
+	let magnitude = Math.sqrt(player.velocity.x*player.velocity.x + player.velocity.y*player.velocity.y);
+	let angle = Math.atan2(player.velocity.y, player.velocity.x)
 
 	if (magnitude >= 5.6) {
 		Matter.Body.setVelocity(player, {

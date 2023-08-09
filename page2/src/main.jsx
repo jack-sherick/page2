@@ -19,7 +19,13 @@ const router = createBrowserRouter([
     path: "/page2/",
     element: <Root />,
     errorElement: <ErrorPage />,
-  },
+    children: [
+      {
+        path: "project/",
+        element: <Start />
+      }
+    ]
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -1,12 +1,16 @@
+import { Helmet } from "react-helmet-async";
+
 export default function Start() {
     return (
         <html>
         <head>
-            <title>Top-Down</title>
+            <Helmet>
+                <script type="module" src="/src/top-down/top-down.js"></script>
+            </Helmet>
         </head>
 
         <body>
-        <button>Test</button>
+            <p>test</p>
         </body>
 
         </html>

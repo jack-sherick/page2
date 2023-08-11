@@ -31,7 +31,7 @@ export default function Root() {
       </nav>
 
       <h1>About Me</h1>
-      <p>Did you ever hear the tragedy of Darth Plagueis The Wise? I thought not.
+      <p>Did you ever hear the tragedy of Darth Plagueis The ..Wise? I thought not.
          It’s not a story the Jedi would tell you. It’s a Sith legend. Darth Plagueis was a Dark Lord of the Sith, 
          so powerful and so wise he could use the Force to influence the midichlorians to create life… 
          He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. 

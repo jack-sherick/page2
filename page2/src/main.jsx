@@ -22,7 +22,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/page2/project/",
-    element: <Start />
+    element: <Start />,
+    errorElement: <ErrorPage />
   }
 ]);
 

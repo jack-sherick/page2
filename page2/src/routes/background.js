@@ -83,26 +83,26 @@ setInterval(function() {
 	for (let i = 0; i < BALL_CONSTANT; ++i) {
 		if (pElements[i].velocity.x > 7) {
 			Matter.Body.setVelocity(pElements[i], {
-				x: 7,
+				x: 10,
 				y: pElements[i].velocity.y
 			})
 		}
 		if (pElements[i].velocity.y > 7) {
 			Matter.Body.setVelocity(pElements[i], {
 				x: pElements[i].velocity.x,
-				y: 7
+				y: 10
 			})
 		}
 		if (pElements[i].velocity.x < -7) {
 			Matter.Body.setVelocity(pElements[i], {
-				x: -7,
+				x: -10,
 				y: pElements[i].velocity.y
 			})
 		}
 		if (pElements[i].velocity.y < -7) {
 			Matter.Body.setVelocity(pElements[i], {
 				x: pElements[i].velocity.x,
-				y: -7
+				y: -10
 			})
 		}
 	}

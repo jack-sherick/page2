@@ -5,7 +5,7 @@ export default function Start() {
         <html>
         <head>
             <Helmet>
-                <script type="module" src="/src/top-down/top-down.js"></script>
+                {/* <script type="module" src="/src/top-down/top-down.js"></script> */}
             </Helmet>
         </head>
 
